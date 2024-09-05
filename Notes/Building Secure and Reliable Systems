@@ -1,0 +1,233 @@
+Building Secure and Reliable Systems
+
+21 chapter so  I need to finish it two days so today should be 10 chapters and tomorrow is 11 chapters
+
+Part I. Introductory Material
+Chapter 1: The Intersection of Security and Reliability
+
+	Incident management
+		- reliability incident
+			- need to have responders to mitigate root cause quickly
+
+		- security
+			- share info on a need to know basis
+
+
+24th May 2024
+	On Passwords and Power Drills
+	Reliability Versus Security: Design Considerations
+	
+	Confidentiality, Integrity, Availability
+		Confidentiality
+		Integrity
+		Availability
+		
+	Reliability and Security: Commonalities
+		"take both account from earliest design stages"
+
+25th May 2024
+		1. Invisibility
+
+		Assessment
+
+		Simplicity
+		
+		Evolution
+		
+		Resilience
+		
+		From Design to Production
+		
+		Investigating Systems and Logging
+		
+		Crisis Response
+		
+		Recovery
+	
+	Conclusion
+
+Chapter 2. Understanding Adversaries
+	Attacker Motivations
+	Attacker Profiles
+		Hobbyists
+		Vulnerability Researchers
+		Governments and Law Enforcement
+		Activists
+		Criminal Actors
+		Automation and Artificial Intelligence
+		Insiders
+	Attacker Methods
+		Threat Intelligence
+		Cyber Kill Chains™
+		Tactics, Techniques, and Procedures
+	Risk Assessment Considerations
+	Conclusion
+
+
+Part II. Designing Systems
+Chapter 3 - Case Study: Safe Proxies
+	Safe Proxies in Production Environments
+	Google Tool Proxy
+	Conclusion
+
+Chapter 4. Design Tradeoffs
+	Design Objectives and Requirements
+		Feature Requirements
+		Nonfunctional Requirements
+		Features Versus Emergent Properties
+		Example: Google Design Document
+	Balancing Requirements
+		Example: Payment Processing
+	Managing Tensions and Aligning Goals
+		Example: Microservices and the Google Web Application Framework
+		Aligning Emergent-Property Requirements
+	Initial Velocity Versus Sustained Velocity
+	Conclusion
+
+Chapter 5. Design for Least Privilege
+	Concepts and Terminology
+		Least Privilege
+		Zero Trust Networking
+		Zero Touch
+	Classifying Access Based on Risk
+	Best Practices
+		Small Functional APIs
+		Breakglass
+		Auditing
+		Testing and Least Privilege
+		Diagnosing Access Denials
+		Graceful Failure and Breakglass Mechanisms
+	Worked Example: Configuration Distribution
+		POSIX API via OpenSSH
+		Software Update API
+		Custom OpenSSH ForceCommand
+		Custom HTTP Receiver (Sidecar)
+		Custom HTTP Receiver (In-Process)
+		Tradeoffs
+	Authorization Decisions
+		Using Advanced Authorization Controls
+		Investing in a Widely Used Authorization Framework
+		Avoiding Potential Pitfalls
+	Advanced Controls
+		Multi-Party Authorization (MPA)
+		Three-Factor Authorization (3FA)
+		Business Justifications
+		Temporary Access
+		Proxies
+	Tradeoffs and Tensions
+		Increased Security Complexity
+		Impact on Collaboration and Company Culture
+		Quality Data and Systems That Impact Security
+		Impact on User Productivity
+		Impact on Developer Complexity
+	Conclusion
+
+Chapter 6. Design for Understandability
+	Why Is Understandability Important?
+	System Invariants
+	Analyzing Invariants
+	Mental Models
+	Designing Understandable Systems
+	Complexity Versus Understandability
+	Breaking Down Complexity
+	Centralized Responsibility for Security and Reliability Requirements
+	System Architecture
+	Understandable Interface Specifications
+	Understandable Identities, Authentication, and Access Control
+	Security Boundaries
+	Software Design
+	Using Application Frameworks for Service-Wide Requirements
+	Understanding Complex Data Flows
+	Considering API Usability
+	Conclusion
+
+Chapter 7. Design for a Changing Landscape
+	Types of Security Changes
+	Designing Your Change
+	Architecture Decisions to Make Changes Easier
+	Keep Dependencies Up to Date and Rebuild Frequently
+	Release Frequently Using Automated Testing
+	Use Containers
+	Use Microservices
+	Different Changes: Different Speeds, Different Timelines
+	Short-Term Change: Zero-Day Vulnerability
+	Medium-Term Change: Improvement to Security Posture
+	Long-Term Change: External Demand
+	Complications: When Plans Change
+	Example: Growing Scope—Heartbleed
+	Conclusion
+
+Chapter 8. Design for Resilience
+	Design Principles for Resilience
+	Defense in Depth
+	The Trojan Horse
+	Google App Engine Analysis
+	Controlling Degradation
+	Differentiate Costs of Failures
+	Deploy Response Mechanisms
+	Automate Responsibly
+	Controlling the Blast Radius
+	Role Separation
+	Location Separation
+	Time Separation
+	Failure Domains and Redundancies
+	Failure Domains
+	Component Types
+	Controlling Redundancies
+	Continuous Validation
+	Validation Focus Areas
+	Validation in Practice
+	Practical Advice: Where to Begin
+	Conclusion
+
+Chapter 9. Design for Recovery
+	What Are We Recovering From?
+		Random Errors
+		Accidental Errors
+		Software Errors
+		Malicious Actions
+	Design Principles for Recovery
+		Design to Go as Quickly as Possible (Guarded by Policy)
+		Limit Your Dependencies on External Notions of Time
+		and Reliability
+		Use an Explicit Revocation Mechanism
+		Know Your Intended State, Down to the Bytes
+		Design for Testing and Continuous Validation
+	Emergency Access
+		Access Controls
+		Communications
+		Responder Habits
+	Unexpected Benefits
+	Conclusion
+
+Chapter 10. Mitigating Denial-of-Service Attacks
+	Strategies for Attack and Defense
+		Attacker’s Strategy
+		Defender’s Strategy
+	Designing for Defense
+		Defendable Architecture
+		Defendable Services
+	Mitigating Attacks
+		Monitoring and Alerting
+		Graceful Degradation
+		A DoS Mitigation System
+		Strategic Response
+	Dealing with Self-Inflicted Attacks
+		User Behavior
+		Client Retry Behavior
+	Conclusion
+	
+
+Part III. Implementing Systems
+Chapter 11. Case Study: Designing, Implementing, and Maintaining a Publicly Trusted CA
+	Background on Publicly Trusted Certificate Authorities
+	Why Did We Need a Publicly Trusted CA?
+	The Build or Buy Decision
+	Design, Implementation, and Maintenance Considerations
+		Programming Language Choice
+		Complexity Versus Understandability
+		Securing Third-Party and Open Source Components
+		Testing
+		Resiliency for the CA Key Material
+		Data Validation
+	Conclusion

@@ -1,0 +1,893 @@
+Google SRE book
+
+22th May 2024
+
+Part I - Introduction
+Chapter 1: Introduction
+	"Hope is not a strategy"
+
+	Sysadmin
+		- assemble existing software components
+		- deploy them to produce server
+		- running them
+		- respond toe vents
+		- update them
+
+25th May 2024
+	Dev
+		fast and more changes(deployment)
+
+	Ops
+		slow and stable so reliable
+
+	SRE
+		a software eng design an ops team 
+		50% work on
+			- tickets
+			- on call
+			
+		50%
+			- automate manual task w/ code
+			- coding on project work
+
+		- implements DevOps
+
+		responsibility
+			- availability
+			- latency
+			- performance
+			- efficiency
+			- change mngmt
+			- monitoring
+			- emergency response
+			- capacity planning
+
+	Error Budgets
+		- tolerance duration of allowed zero outages in order for
+		devs to increase feature velocity
+
+	Monitoring
+		Alerts
+			- human needs to take action immediayely
+
+		Tickets
+			- sys cannot auto handle situation 
+			- no damage if human take action in a few days
+
+		Logging
+			- record for troubleshooting, analysis and regulation
+			
+	DevOps
+		- lat 2008
+		- philosophy
+			- reduce silo
+			- fast deployment
+
+	Emergency Response
+		MTTF
+
+		MTTR
+
+		Practices
+			Wheel of Misfortune
+				- simulation to prepare eng to react to on-call events
+
+	Change management
+		- 70% due to changes in a live sys
+
+		BP
+			- implement progressive rollouts
+			- quickly and accurately detecting problems
+			- rolling back changes safely  when problems arise
+
+	Demand Forecasting and Capacity Planning
+		Organic growth
+			- cause by 
+				- natural product adoption
+				- usage by customers
+
+		Inorganic growth
+			- results from events like 
+				- feature launches
+				- marketing campaigns
+				- business driven changes
+
+		Steps
+			1.  accurate organic demand forecast beyond lead time re for acquiring capacity
+			2. accurate incorporation of inorganic demand sources into demand forecast
+			3. Regular load tesgting of sys to correlate raw capacity to service capcity
+				- servers
+				- disks 
+
+
+	Provisioning
+		- change mngmt + capacity planning
+
+	Efficiency and Performance
+		Use of resource
+			- demand(load)
+			- capacity
+			- software efficiency
+		
+		SRE predicts
+			- demand
+			- provision capcity
+			- can modify software
+
+		"SRE add capacity to meet specific response speed"
+
+	Conclusion
+
+	
+
+Chapter 2 - The Production Environment at Google, from the Viewpoint of an SRE
+
+
+Part II - Principles
+Chapter 3 - Embracing Risk
+	Motivation for Error Budgets
+
+		Best Practice
+			- product mngmt defines SLo
+				- how much uptime service should have per quarter
+			- actual uptime is measured by neutral third party
+				monitoring sys
+			- error budget
+				- how much unreliability/downtime is remaining for the quarter
+			- uptime measured above SLO or error budget remaining
+				- new releases can be pushed
+
+		Benefits
+			- common incentive allows both product dev and SRE find balance bet innovation and reliability
+
+	Key Insights
+		- managing service reliability is 
+			- managing risk
+			- managing risk can be costly
+		- Error budget allow decision to fast track release new featurs or slow it down to make sys  reliable
+
+
+Chapter 4 - Service Level Objectives
+	SLI
+		- what to measure(Measurable that affect user exp)
+		- sample
+			- req latency
+				- dura to return a response to a req
+			- error rate
+				- fraction of all req received
+			- sys throughput
+				-  requests per second
+				- rate
+				- average
+				- percentile
+			- availability
+				- time that service is usable
+			- yield
+				- fractons of well formed req that succeed
+			- durability
+				-  data will be retained over long period of time
+
+
+	SLO
+		- How good is our service
+		- duration to met target measurable from SLI
+		- SLI <= target
+		- lower bound <= SLI <= upper bound
+
+	SLA
+		- "SLO with consequence for marketing"
+
+	What users care about?
+		- user facing serving sys
+			- availability
+				- can response to reque
+			- latency
+				- how long did it take to response
+			- througput
+				- how many req could be handled
+
+		- storage sys
+			- latency
+				- how long does it take to R/W data
+			- availability
+				- can access data on demand
+			- durability
+				- is data still there when we need it
+
+		- big data sys/data processing pipelines
+			- throughput
+				- how much data is being processed
+
+			- end-to-end latency
+				- how long does it take the data to progress from ingestion to completion
+
+
+	Collecting Indicatios
+		- prometheus
+		- borgmon
+
+	Aggregations
+		- using percenitles allwows to consider the shape of the distribuion and its differing attributes
+
+		- 99th shows worst case value
+		- 50th percentile for typical user exp
+
+	Standardize Indicators
+		- Aggregation intervals
+			- "Averaged over 1 minute"
+		- Aggregation regions
+			- "All the tasks in a cluster"
+		- How freq measurements are made
+			- " Every 10 sec"
+		- Which req are included
+			- "HTTP GETs from black-box monitoring"
+		- how data is qacquired
+			- " through our monitoring, measured at the server"
+		- Data access latency
+			- "Time to last byte"
+
+	Why not 100%?
+		- reduce rate of innovation and deployment
+		- expensive
+		- conservative soln
+		- tacked on daily/weekly basis
+
+		- ideal tracking time
+			- monthly/quarterly assessment
+
+	Choosing targets
+		- don't pick target based on current performance
+			- req heroic efforts
+			- cannot be improved w/o sig redesign
+
+		- keep it simple
+		- avoid absolutes
+		- few SLos as possible
+			- can't win convo baout priorities by quoting particular SLO
+				- not worth having
+		- perfection can wait
+			- start w/ loose target then tighten it than choosing overly strict target
+
+	"SLO reflect what users care about"
+		- helpful
+		- legitimate forcing func fo dev team
+
+	"Keep a safety margin"
+		- use a tighter internal LSO than advertised
+
+	"Don't overachieve"
+
+	If service doing fine
+		- staff should be spent on other priorities
+			- paying off tech debt
+			- add new features
+			- introduce othe products
+
+Chapter 5 - Eliminating Toil
+	"If a human operator needs to touch sys dyring normal operatiosn, you have a bug. The definitions of normal changes as your sys grow."
+
+	Toil
+		- repetitive
+		- tited to running prod service tends to be 
+			- manual
+			- repetitive
+			- automatable
+			- tactical
+			- devoid of enduring vlaue
+			- sacles linearly as serivce grows
+
+
+	Overhead
+		- email
+		- admin chores
+		- work not tied to running prod service
+			- team mettings
+			- setting
+			- grading goals
+			- snippets
+			- HR paperowrk
+
+	"50% should be spent on eng project work that reduce future toil/add service features"
+		- scale
+		- architect next gen services
+		- build cross SRE toolchaings
+
+	Engineering
+		- req human hjudgement
+			- permanent improvent in service
+			- guided by strategy
+
+	Sys eng
+		- config
+		- doc sys
+
+	Toil Bad?
+		- career stagnation
+		- low morale
+		 - creates confusion
+		 - slows progress
+		 - sets precedent
+		 - promotes attrition
+		 - causes breach of faith
+
+Chapter 6 - Monitoring Distributed Systems
+	Monitoring
+		- collecting
+		- processing
+		- aggregating
+		- displaying real time quantitative data
+			- sys
+			- query coounts and types
+			- error counts and types
+			- processing times
+			- server lifetimes
+
+	White box monitoring
+		- internals of sys
+			- logs
+			- JVM profiling interface
+			- HTTP handler that emits internal stat
+
+
+	black box monitoring
+		-  testing externally visible behavior as a user would see it
+
+	Dashboard
+
+	
+	alert
+		- TICKETS
+		- email alerts
+		- pages
+
+	root cause
+
+	node and machine
+		- caching server 
+		- puppet or chef
+
+	push
+	 	- any change to a service running software or its config
+
+	WHy Monitor?
+		- Analyzing long term trends
+			- how big my DB
+			- how fast growing
+			- how many active user count growing
+
+		- Comparing over time or exp groups
+			-
+		 alerting
+		- building dashboards
+
+	Symptoms Vs Causes
+		"what's broken?"
+		"WHy?"
+
+	The four golden signals
+		1. Latency
+			- time it takes to service re
+		
+		2. traffic
+			- how much demand is being placed on your sys
+
+		3. Errors
+			- rate of req tht fail
+		
+		4. Saturation
+			- how full is your service
+
+	"distributing the histogram boundaries approx exponential is easy way to visualize the distribution of your requests"
+
+	How to measure?
+		- record current CPU utilization each second
+		- use buckets of 5% granularity, inc the appropriate CPu util bucket each second
+		- aggregate those values every minute
+
+		Keep in mind
+			- rules that catch real incidents most often should be as
+				- simple
+				- predictable
+				- reliable as possible
+			- data collection
+			- aggregation
+			- alerting config 
+				- rarely exercisesd less than once a quarter 
+				- up for removal
+			- signals that are collected but not exposed in any prebaked dashboard nor used by any alert are candidates for removal
+
+	Principles
+	- avoid false positve and pager burnout
+		- Does this rule detect an otherwise undetected condition that is urgent, actionable, and actively or imminently user-visible?25
+
+		- Will I ever be able to ignore this alert, knowing it’s benign? When and why will I be able to ignore this alert, and how can I avoid this scenario?
+
+		- Does this alert definitely indicate that users are being negatively affected? Are there detectable cases in which users aren’t being negatively impacted, such as drained traffic or test deployments, that should be filtered out?
+
+		- Can I take action in response to this alert? Is that action urgent, or could it wait until morning? Could the action be safely automated? Will that action be a long-term fix, or just a short-term workaround?
+
+		-Are other people getting paged for this issue, therefore rendering at least one of the pages unnecessary?
+
+	Pagers best pracitce
+		- Every time the pager goes off, I should be able to react with a sense of urgency. I can only react with a sense of urgency a few times a day before I become fatigued.
+
+		- Every page should be actionable.
+
+		- Every page response should require intelligence. If a page merely merits a robotic response, it shouldn’t be a page.
+
+		- Pages should be about a novel problem or an event that hasn’t been seen before.
+
+
+	"More effort on catching symptoms than causes"
+
+	"Only worry about imminent causes"
+
+Chapter 7 - The Evolution of Automation at Google
+	"automation is a force multiplier, not a panacea"
+
+	"Meta-software”
+		—software to act on software.
+
+	Use cases
+		- User account creation
+		
+		- Cluster turnup and turndown for services
+		
+		- Software or hardware installation preparation and decommissioning
+		
+		- Rollouts of new software versions
+		
+		- Runtime configuration changes
+		
+		- A special case of runtime config changes: changes to your dependencies
+
+
+	Automate Yourself Out of a Job: Automate ALL the Things!
+
+	Inclination to specialze
+		1. Competence
+			- accuracy
+		2. Latency
+			- how quickly all steps are executed when initiated
+		3. Relevance
+			- proportion of real-world process covered by automation
+
+	Incentives
+		- A team whose primary task is to speed up the current turnup has no incentive to reduce the technical debt of the service-owning team running the service in production later.
+
+		- A team not running automation has no incentive to build systems that are easy to automate.
+
+		- A product manager whose schedule is not affected by low-quality automation will always prioritize new features over simplicity and automation.
+
+	Our evolution of turnup automation followed a path:
+		- Operator-triggered manual action (no automation)
+		
+		- Operator-written, system-specific automation
+
+		- Externally maintained generic automation
+		
+		- Internally maintained, system-specific automation
+	
+		- Autonomous systems that need no human intervention
+
+	"Diskserase"
+		- auto decommissioning rack
+
+	"Introduce rate limiting into automation and make workflow idempotent"
+
+Chapter 8 - Release Engineering
+
+Chapter 9 - Simplicity
+	"The price of reliability is the pursuit of the utmost simplicity"
+
+	"At the end of the day, our job is to keep agility and stability in balance in the system"
+
+	"Unlike a detective story, the lack of excitement, suspense, and puzzles is actually a desirable property of source code." 
+
+	Minimize Accidental Complexity
+		- Push back when accidental complexity is introduced into the systems for which they are responsible
+
+		- Constantly strive to eliminate complexity in systems they onboard and for which they assume operational responsibility
+		
+	" many lines of commec create distractions and confusion"
+
+	" code that is never executed is a time bomb"
+
+	"Every new line of code written is a liability"
+
+	Software bloat
+		- software to be slower and bigger as add features added
+
+	Minimal APIs
+		"perfection is when there is no longer anything to take away"
+
+	Modularity
+		"if a bug is discover, a component can be pushed to prod independent of the rest of the sys"
+
+	Release Simplicity
+
+	"We are keeping the environment uncluttered of distractions so that focus remains squarely on innovation, and real engineering can proceed."
+
+Part III - Practices
+
+Chapter 10 - Practical Alerting
+
+Chapter 11 - Being On-Call
+
+Chapter 12 - Effective Troubleshooting
+
+Chapter 13 - Emergency Response
+
+Chapter 14 - Managing Incidents
+
+Chapter 15 - Postmortem Culture: Learning from Failure
+
+Chapter 16 - Tracking Outages
+
+Chapter 17 - Testing for Reliability
+
+		Regression tests
+			- prevent bugs from sneaking back into codebase.
+
+
+	Production Tests
+		- interact w/ live prod sys
+		-  same as black box testing
+
+	Rollouts Entangle Tests
+		-  often happen in stages, using mechanisms that gradually shuffle users around, in addition to monitoring at each stage to ensure that the new environment isn’t hitting anticipated yet unexpected problems
+
+	Configuration test
+		- examines production to see how a particular binary is actually configured and reports discrepancies against that file.
+		- not hermetic
+			- operate outside the test infra sandbox
+
+		The tests become more complex when the configuration does one of the following:
+			- Implicitly incorporates defaults that are built into the binary (meaning that the tests are separately versioned as a result)
+			- Passes through a preprocessor such as bash into command-line flags (rendering the tests subject to expansion rules)
+			- Specifies behavioral context for a shared runtime (making the tests depend on that runtime’s release schedule)
+
+	Stress test
+		- understand the limits of both the system and its components
+			- leads to safely operate a sys
+		- find the limits on a web service
+		- answer the questions:
+			- How full can a database get before writes start to fail?
+			- How many queries a second can be sent to an application server before it becomes overloaded, causing requests to fail?
+
+	Canary test
+		- "canary in a coal mine"
+			- using a live bird to detect toxic gases before humans were poisoned.
+		- "A canary test isn’t really a test; rather, it’s structured user acceptance."
+		-  is more ad hoc.
+
+	Creating a Test and Build Environment
+		- start your approach by asking the following questions:
+			- Can you prioritize the codebase in any way? To borrow a technique from feature development and project management, if every task is high priority, none of the tasks are high priority. Can you stack-rank the components of the system you’re testing by any measure of importance?
+			- Are there particular functions or classes that are absolutely mission-critical or business-critical? For example, code that involves billing is a commonly business-critical. Billing code is also frequently cleanly separable from other parts of the system.
+			- Which APIs are other teams integrating against? Even the kind of breakage that never makes it past release testing to a user can be extremely harmful if it confuses another developer team, causing them to write wrong (or even just suboptimal) clients for your API
+
+		-"Shipping software that is obviously broken is among the most cardinal sins of a developer."
+			-"It takes little effort to create a series of smoke tests to run for every release."
+				- lead to highly tested, reliable software.
+
+		-"Treat defects this seriously for a few reasons:"
+			- It’s usually harder to fix what’s broken if there are changes to the codebase after the defect is introduced.
+			- Broken software slows down the team because they must work around the breakage.
+			- Release cadences, such as nightly and weekly builds, lose their value.
+			- The ability of the team to respond to a request for an emergency release (for example, in response to a security vulnerability disclosure) becomes much more complex and difficult.
+
+		- Bazel
+			- more precise control over testing
+			- creates dependency graphs for software projects
+			- change is made to a file, Bazel only rebuilds the part of the software that depends on that file
+				- provide reproducible builds
+			- tests only run for changed code.
+				- tests cost is lessen and becomes faster
+
+		- "Set explicit goals and deadlines"
+
+	Testing at Scale
+		-  Practical testing environments 
+			- try to select branch points among the versions and merges.
+
+	Testing Scalable Tools
+		- SRE tools also need testing, perform tasks such as the following:
+			- Retrieving and propagating database performance metrics
+			- Predicting usage metrics to plan for capacity risks
+			- Refactoring data within a service replica that isn’t user accessible
+			- Changing files on a server
+
+		- SRE tools share two characteristics:
+			- Their side effects remain within the tested mainstream API
+			- They’re isolated from user-facing production by an existing validation and release barrier
+
+	Barrier Defenses Against Risky Software
+		- "a database engine implementation "
+			- might allow administrators to temporarily turn off transactions in order to shorten maintenance windows. 
+
+		Avoid this risk of havoc with design:
+			1. Use a separate tool to place a barrier in the replication configuration so that the replica cannot pass its health check. As a result, the replica isn’t released to users.
+			2. Configure the risky software to check for the barrier upon startup. Allow the risky software to only access unhealthy replicas.
+			3. Use the replica health validating tool you use for black-box monitoring to remove the barrier.
+
+		Automation tools perform tasks like the following:
+			- Database index selection
+			- Load balancing between datacenters
+			- Shuffling relay logs for fast remastering
+
+		Automation tools share two characteristics:
+			- The actual operation performed is against a robust, predictable, and well-tested API
+			- The purpose of the operation is the side effect that is an invisible discontinuity to another API client
+
+	Testing Disaster
+		Disaster Recovery tools designed to operate offline. Such tools do the following:
+			- Compute a checkpoint state that is equivalent to cleanly stopping the service
+			- Push the checkpoint state to be loadable by existing nondisaster validation tools
+			- Support the usual release barrier tools, which trigger the clean start procedure
+
+	Using Statistical Tests
+		- Statistical techniques, such as
+			- Lemon [Ana07] for fuzzing, and 
+			- Chaos Monkey96 and 
+			- Jepsen97 for distributed state, 
+				- aren’t necessarily repeatable tests.
+		- these techniques can be useful:
+			- They can provide a log of all the randomly selected actions that are taken in a given run—sometimes simply by logging the random number generator seed.
+			- If this log is immediately refactored as a release test, running it a few times before starting on the bug report is often helpful. The rate of nonfailure on replay tells you how hard it will be to later assert that the fault is fixed.
+			- Variations in how the fault is expressed help you pinpoint suspicious areas in the code.
+			- Some of those later runs may demonstrate failure situations that are more severe than those in the original run. In response, you may want to escalate the bug’s severity and impact.
+
+	The Need for Speed
+		- Types of scenario	
+			- benign (in a code quality sense), 
+			- while others are actionable.
+
+	Testing Deadlines
+		- tests run as a self-contained hermetic binary that fits in a small compute container for a few seconds.
+		- batch tests
+			- unable to offer interactive feedback
+			
+	Pushing to Production
+		- production configuration management 
+			- is commonly kept in a source control repository
+			- separate from the developer source code
+		
+		- software testing infrastructure often can’t see production configuration
+
+		- segregating testing infrastructure from production configuration 
+			- is appreciably worst
+			- prevents relating the model describing production to the model describing the application behavior. 
+
+	Expect Testing Fail
+		- In order to remain reliable and to avoid scaling the number of SREs supporting a service linearly,
+			- the production environment has to run mostly unattended
+
+		- To remain unattended,
+			- the environment must be resilient against minor faults. 
+
+		- "When a major event that demands manual SRE intervention occurs, the tools used by SRE must be suitably tested"
+
+		Strategy	
+			1. A configuration file that exists to keep MTTR low, 
+			and is only modified when there’s a failure, has a release cadence slower than the MTBF. 
+			There can be a fair amount of uncertainty as to whether a given manual edit is actually truly optimal without the edit impacting the overall site reliability.
+
+			2. A configuration file that changes more than once per user-facing application release (for example, because it holds release state) can be a major risk if these changes are not treated the same as application releases. If testing and monitoring coverage of that configuration file is not considerably better than that of the user application, that file will dominate site reliability in a negative way.
+
+		- One method of handling configuration files 
+			- is to make sure that every configuration file is categorized under only one of the options in the preceding bulleted list, 
+			- and to somehow enforce that rules:
+				- Each configuration file has enough test coverage to support regular routine editing.
+				- Before releases, file edits are somewhat delayed while waiting for release testing.
+				- Provide a break-glass mechanism to push the file live before completing the testing. Since breaking the glass impairs reliability, it’s generally a good idea to make the break noisy by (for example) filing a bug requesting a more robust resolution for next time.
+
+	Break-Glass and Testing
+		- automatically boosts the priority of those release tests 
+			- so that they can preempt the routine incremental validation 
+			- and coverage workload that the test infrastructure is already processing.
+
+		-  It’s better to leave the tests running, associate the early push event with the pending testing event,
+
+	Integration
+		- Python 
+			- are commonly used for configuration files 
+				- because their interpreters can be embedded, 
+			- and some simple sandboxing is available to protect against nonmalicious coding errors.
+		- Python’s safe_load 
+			- tested parser
+			- removes some of the toil incurred by the configuration file. 
+
+		- protocol buffers
+			- schema is defined in advance 
+			- and automatically checked at load time,
+			- removing even more of the toil, yet still offering the bounded runtime.
+
+		- "defense in depth is advisable"
+			- All tools can behave unexpectedly due to bugs not caught by testing,
+
+	Production Probes
+		-Three sets of requests
+			- Known bad requests
+			- Known good requests that can be replayed against production
+			- Known good requests that can’t be replayed against production
+
+
+		- Set as both integration and release tests
+			- monitoring probes.
+
+		- Those two ways were different for a few reasons:
+			- The release test probably wrapped the integrated server with a frontend and a fake backend.
+			- The probe test probably wrapped the release binary with a load balancing frontend and a separate scalable persistent backend.
+			- Frontends and backends probably have independent release cycles. It’s likely that the schedules for those cycles occur at different rates (due to their adaptive release cadences).
+
+		- "Monitoring probe running in production is a configuration that wasn’t previously tested."
+
+	Fake Backend Versions
+		- When implementing release tests, the fake backend is often maintained by the peer service’s engineering team and merely referenced as a build dependency.
+
+		- ensures that retrieving every combination of the two releases and determining whether the test still passes doesn’t take much extra configuration
+
+	Conclusion	
+		- testing is continuous
+		- most profitable investments engineers can make to improve the reliability of their product
+		- " You can’t fix a problem until you understand it, and in engineering"
+			- - you can only understand a problem by measuring it
+
+Chapter 18 - Software Engineering in SRE
+	The majority of these tools:
+		- maintaining uptime and keeping latency low
+		- but take many forms: 
+		- examples 
+			- include binary rollout mechanisms,
+			- monitoring, 
+			- or a development environment built on dynamic server composition.
+
+	Why important?
+		- Effectively Develop Internal software:
+			- The breadth and depth of Google-specific production knowledge within the SRE organization allows its engineers to design and create software with the appropriate considerations for dimensions such as scalability, graceful degradation during failure, and the ability to easily interface with other infrastructure or tools.
+			- Because SREs are embedded in the subject matter, they easily understand the needs and requirements of the tool being developed.
+			- A direct relationship with the intended user—fellow SREs—results in frank and high-signal user feedback. Releasing a tool to an internal audience with high familiarity with the problem space means that a development team can launch and iterate more quickly. Internal users are typically more understanding when it comes to minimal UI and other alpha product issues.
+
+	SRE’s guiding principles
+		- "team size should not scale directly with service growth." 
+			- requires:
+				- perpetual automation work 
+				- and efforts to streamline tools, 
+				- processes,
+				- other aspects of a service that introduce inefficiency into the day-to-day operation of production.
+
+	Auxon Case Study: Project Background and Problem Space
+		- automate capacity planning for services running in Google production.
+
+		Traditional capacity planning
+			1. Collect demand forecasts
+				- How many resources are needed? 
+				- When and where are these resources needed?
+					- Uses the best data we have available today to plan into the future
+					- Typically covers anywhere from several quarters to years
+
+			2. Devise build and allocation plans
+				- what’s the best way to meet this demand with additional supply of resources? 
+				- How much supply, and in what locations?
+			
+			3. Review and sign off on plan
+				- Is the forecast reasonable? 
+				- Does the plan line up with budgetary, product-level, and technical considerations?
+
+			4. Deploy and configure resources.
+				- Once resources eventually arrive (potentially in phases over the course of some defined period of time), which services get to use the resources? 
+				- How do I make typically lower-level resources (CPU, disk, etc.) useful for services?
+
+			Capacity planning is a neverending cycle:
+				- assumptions change, 
+				- deployments slip
+				- and budgets are cut, resulting in revision upon revision of The Plan. 
+				- And each revision has trickle-down effects that must propagate throughout the plans of all subsequent quarters.
+
+			Brittle by nature
+				- Resource allocation plan that can be disrupted by any seemingly minor change:
+					- A service undergoes a decrease in efficiency, and needs more resources than expected to serve the same demand.
+					- Customer adoption rates increase, resulting in an increase in projected demand.
+					- The delivery date for a new cluster of compute resources slips.
+					- A product decision about a performance goal changes the shape of the required service deployment (the service’s footprint) and the amount of required resources.
+
+				- "Minor changes require cross-checking the entire allocation plan"
+					- ensures:
+						-  plan is still feasible; 
+					
+				-" larger changes (such as delayed resource delivery or product strategy changes)" 
+					- potentially require re-creating the plan from scratch. 
+
+			Laborious and imprecise
+
+		Our Solution: Intent-Based Capacity Planning
+			- "Specify the requirements, not the implementation."
+
+			- is to programmatically encode the dependencies and parameters (intent) of a service’s needs, and use that encoding to autogenerate an allocation plan that details which resources go to which service, in which cluster.
+
+			- If demand, supply, or service requirements change,
+				- we can simply autogenerate a new plan in response to the changed parameters, which is now the new best distribution of resources.
+
+			- With bin packing delegated to computers, 
+				- human toil is drastically reduced, 
+				- and service owners can focus on high-order priorities like
+					- SLOs, 
+					- production dependencies, 
+					- and service infrastructure requirements, 
+					- as opposed to low-level scrounging for resources.
+
+			- Intent 
+				- is the rationale for how a service owner wants to run their service. 
+
+			Thingking Process
+				1. "I want 50 cores in clusters X, Y, and Z for service Foo."
+					- Why do we need this many resources specifically in these particular clusters?
+
+				2. "I want a 50-core footprint in any 3 clusters in geographic region YYY for service Foo."
+					- Why do we need this quantity of resources, and why 3 footprints?
+
+				3. "I want to meet service Foo’s demand in each geographic region, and have N + 2 redundancy."
+					- Why do we need N + 2 for service Foo?
+
+				4. "I want to run service Foo at 5 nines of reliability."
+					- This is a more abstract requirement, and the ramification if the requirement isn’t met becomes clear: 
+						- reliability will suffer. 
+
+			Precursors to Intent
+				- What information do we need in order to capture a service’s intent? 
+					- Enter dependencies, 
+					- performance metrics
+					- and prioritization.
+
+			Dependencies
+				- A given set of production dependencies can be shared, possibly with different stipulations around intent.
+
+			Performance metrics
+				- are the glue between dependencies. 
+				-  Deriving appropriate performance metrics for a service can involve load testing and resource usage monitoring.
+
+			Prioritization
+				- "resource constraints result in trade-offs and hard decisions: of the many requirements that all services have, which requirements should be sacrificed in the face of insufficient capacity?"
+
+				- "prioritization can be ad hoc and opaque to service owners"
+
+				- "Intent-based planning allows prioritization to be as granular or coarse as needed"
+
+		Introduction to Auxon
+
+Chapter 19 - Load Balancing at the Frontend
+
+
+Chapter 20 - Load Balancing in the Datacenter
+
+Chapter 21 - Handling Overload
+
+Chapter 22 - Addressing Cascading Failures
+
+Chapter 23 - Managing Critical State: Distributed Consensus for Reliability
+
+Chapter 24 - Distributed Periodic Scheduling with Cron
+
+Chapter 25 - Data Processing Pipelines
+
+Chapter 26 - Data Integrity: What You Read Is What You Wrote
+
+Chapter 27 - Reliable Product Launches at Scale
+
+Part IV - Management
+Chapter 28 - Accelerating SREs to On-Call and Beyond
+
+Chapter 29 - Dealing with Interrupts
+
+Chapter 30 - Embedding an SRE to Recover from Operational Overload
+
+Chapter 31 - Communication and Collaboration in SRE
+
+Chapter 32 - The Evolving SRE Engagement Model
+
+
+Part V - Conclusions
+Chapter 33 - Lessons Learned from Other Industries
+
+Chapter 34 - Conclusion
