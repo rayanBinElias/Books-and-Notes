@@ -1228,13 +1228,237 @@ much the way you'd expect.
 	4.12 Defining and Describing （という）
 
 		4.12.1 The various uses of 「いう」
-			- to define
+			- to define, describe, and generally just talk about the thing itself
 			- Using 「いう」 to describe anything
 			- Rephrasing and making conclusions
 			- Using 「って」 or 「て」 for 「という」
 			- Saying 「ゆう」 instead of 「いう」
 	
 	Page 157
+
+6th September 2024
+		4.12.2 Using 「いう」 to define
+			Examples
+				1. 私はアリスといいます。
+					I am called Alice. (lit: As for me, you say Alice.)
+
+				2.  これは、なんという⿂ですか。
+					What is this fish referred to as?
+
+				3. この⿂は、鯛といいます。
+					This fish is known as "Tai".
+
+				4. ルミネというデパートはどこにあるか、知っていますか？
+					Do you know where the department store called "Lumine" is?
+				
+				5. 「友達」は、英語で「friend」という意味です。
+					The meaning of "tomodachi" in English is "friend".		
+
+		4.12.3 Using 「いう」 to describe anything
+			-  as a generic verb to enable us to talk about any relative clause
+			
+			Examples
+				1. 主⼈公が犯⼈だったというのが⼀番⾯⽩かった。
+					The most interesting thing was that the main character was the criminal.
+				
+				2. ⽇本⼈はお酒に弱いというのは本当？
+					Is it true that Japanese people are weak to alcohol?
+
+				3. 独⾝だというのは、嘘だったの？
+					It was a lie that you were single?
+				
+				4. リブートというのは、パソコンを再起動するということです。
+					Reboot means to restart your computer.
+
+			Use 「こう」、「そう」、「ああ」、and 「どう」, which when combined with 「いう」
+				- means "this way", "that way", "that way (far away in an abstract sense)" and "what way" respectively.
+
+			Examples
+				1. あんたは、いつもこういう時に来るんだから、困るんだよ。
+					It's because you always come at times like these that I'm troubled.
+				
+				2. そういう⼈と⼀緒に仕事をするのは、嫌だよね。
+					(Anybody would) dislike doing work together with that type of person, huh?
+				
+				3. ああいう⼈と結婚できたら、幸せになれると思います。
+					I think you can become happy if you could marry that type of person.
+				
+				4. ⼤学に⾏かないって、どういう意味なの？
+					What do you mean, "You're not going to go to college?"
+
+		4.12.4 Rephrasing and making conclusions with 「という」
+			Example Dialogue
+				Ａ：みきちゃんは、あんたの彼⼥でしょう？
+						Miki-chan is your girlfriend, right?
+				
+				Ｂ：う〜ん、彼⼥というか、友達というか、なんというか・・・
+						Um, you might say girlfriend, or friend, or something…
+			
+			Examples
+				1. お酒は好きというか、ないと⽣きていけない。
+					I like alcohol or rather, can't live on without it.
+			
+				2. 多分⾏かないと思う。というか、お⾦がないから、⾏けない。
+					Don't think I'll go. Or rather, can't because there's no money.
+			
+				3. というか、もう帰らないとだめですけど。
+					Rather than that, I have to go home already.
+
+			Using「か」to rephrase a conclusion, we can also simply use「こと」to sum up something without rephrasing anything.
+				Example Dialogue
+					Ａ：みきちゃんが洋介と別れたんだって。
+							I heard that Miki-chan broke up with Yousuke.
+					
+					Ｂ：ということは、みきちゃんは、今彼⽒がいないということ？
+							Does that mean Miki-chan doesn't have a boyfriend now?
+					
+					Ａ：そう。そういうこと。
+							That's right. That's what it means.
+
+		4.12.5 Using 「って」 or 「て」 for 「という」
+			- will allow us to leave out not　only 「いう」 but also any accompanying particles as you can see in the following example
+			
+			Examples
+				1. 来年留学するというのは、智⼦のこと？
+					The studying abroad next year thing, is that Tomoko?
+				
+				2. 来年留学するって智⼦のこと？
+					The studying abroad next year thing, is that Tomoko?
+
+			「だって」 is also another phrase that leaves out just about everything
+				- 「とはいっても」 meaning, "even if that was the case"
+
+			Example 1
+				Ａ：しないとだめだよ。
+				A: Have to do it, you know.
+				
+				Ｂ：だって、時間がないからできないよ。
+				B: But (even so), can't do it because there is no time.
+				
+			Example 2
+				Ａ：⾏かなくてもいいよ。
+				A: Don't have to go, you know.
+				Ｂ：だって、みんな⾏くって。私も⾏かないと。
+				B: But (even so), everybody said they're going. I have to go too
+
+			In some cases, the small 「つ」 is left out and just 「て」 is used instead of 「って」. 
+			Examples
+				1. てことは、みきちゃんは、今彼⽒がいないてこと？
+					Does that mean Miki-chan doesn't have a boyfriend now?
+				
+				2. ていうか、もう帰らないとだめですけど。
+					Rather than that, I have to go home already.
+
+			「て」 is generally not used to express what people have actually said or heard, which is why it wasn't covered in the last lesson.
+				• みきちゃんが、明⽇こないて。
+					(Can't use 「て」 for something actually said)
+				
+				• みきちゃんが、明⽇こないって。
+					Miki-chan says she isn't coming tomorrow
+
+		4.12.6 Saying 「ゆう」 instead of 「いう」
+			Examples
+				1. てゆうか、もう帰らないとだめですけど。
+					Rather than that, I have to go home already.
+				
+				2. そうゆうことじゃないって！
+					I said it's not like that (lit: it's not that type of thing)!
+
+	4.13 Trying something out or attempting to do something（〜てみる、volitional+ とする）
+
+		4.13.1 Let's try some stuff
+			- "try" to mean both 
+				- "to try something out" and 
+				- "to make an effort to do something". 
+
+		4.13.2 To try something out
+			- Conjugate the verb to the te-form and add 「みる」.
+				Example:
+					切る → 切って → 切ってみる
+
+			- You can treat the whole result as a regular verb just as you would with 「⾒る」.	
+				Example:
+					切ってみる、切ってみた、切ってみない、切ってみなかった
+
+			Examples
+				1. お好み焼きを初めて⾷べてみたけど、とてもおいしかった！
+					I tried eating okonomiyaki for the first time and it was very tasty!
+				
+				2. お酒を飲んでみましたが、すごく眠くなりました。
+					I tried drinking alcohol and I became extremely sleepy.
+				
+				3. 新しいデパートに⾏ってみる。
+					I'm going to check out the new department store.
+				
+				4. 広島のお好み焼きを⾷べてみたい！
+					I want to try eating Hiroshima okonomiyaki!
+
+		4.13.3 To attempt to do something
+
+	page 167
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
