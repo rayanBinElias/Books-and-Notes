@@ -862,7 +862,7 @@ much the way you'd expect.
 			5. ⾷べなければ病気になるよ。
 				If you don't eat, you will become sick.
 
-	4. Past conditional using 「たら (ば)」
+	4. "Past conditional" using 「たら (ば)」
 		Conjugation Rule for 「たら (ば)」
 			• First change the noun, adjective, or verb to its past tense and attach 「ら」
 			Examples
@@ -1392,39 +1392,123 @@ much the way you'd expect.
 				
 				4. 広島のお好み焼きを⾷べてみたい！
 					I want to try eating Hiroshima okonomiyaki!
-
-		4.13.3 To attempt to do something
-
 	page 167
 
+8th September 2024
+	4.13.3 To attempt to do something
+		Change the verb to the volitional form and add 「とする」.
+		Examples
+			1. ⾒る → ⾒よう → ⾒ようとする
+			
+			2. ⾏く → ⾏こう → ⾏こうとする
 
+			3. 毎⽇、勉強を避けようとする。
+				Everyday, she attempts to avoid study.
 
+			4. 無理やりに部屋に入ろうとしている。
+				He is attempting to foce his way into the room.
 
+			5. 早く寝ようとしたけど、徹夜は結局した。
+				I attempted to sleep early but ended up staying up all night
 
+			6. お奥を呑もうとしたが、奥さんが止めた。
+				He tried to dirnk alcohol but his wife stopped him.
 
+		Use the verb「決める」to say, "decide to attempt to do [X]".
+			7. 勉強をなるべく避けようと思うた。
+				I thought I would attempt to avoid studying as much as possible.
 
+			8. 毎日ジムに行こうと決めた。
+				Decided to attempt to go to gym everyday.
 
+	4.14 Giving and Receiving（あげる、やる、くれる、もらう）
+		4.14.1 Japanese people like gifts
+			- year end presents
+			- summber festival gifts
+			- pasalubong
+			- marriage/funerals money help fund
+	page 169
 
+9th September 2024	
+	4.14.2 When to use 「あげる」
+		- "to give" seen from the speaker's point of view
+		- must use this verb when you are giving something or doing something for someone else.
 
+	Examples
+	1. 私が友達にプレゼントをあげた。
+		I gave present to friend.
+	
+	2. これは先⽣にあげる。
+		I'll give this to teacher.
 
+	In order to express the giving of a favor (verb) you must use the ever useful te-form and then attach 「あげる」
+	3. 車を買ってあげるよ。
+		I'll give you the favor of buying a car
 
+	4. 代わりに言ってあげる。
+		I'll give you the favor of goin in your place.
 
+	For third-person, this verb is used when the speaker is looking at it from the giver's point of view.
+	5. 学生がこれを先生にあげる。
+		The student give this to teacher. (looking at it from the student's point of view)
+	
+	6. 友達が父にいいことを教えてあげた。
+		Friend gave the favor of teaching something good to my dad. (looking at it from the friend's point of view)
 
+	Using 「やる」 to mean 「あげる」
+		- Usually used for pets, animals, and such, you can substitute 「やる」
 
+	7. 犬に餌をやった？
+		Did you give the dog food?
 
+	4.14.3 When to use 「くれる」
+		-  "to give" but unlike 「あげる」, it is from the receiver's point of view
+		- when someone else is giving something or doing something for you (effectively the opposite of 「あげる」).
 
+	Examples
+	1. 友達が私にプレゼントをくれた。
+		Friend gave present to me.
+	
+	2. これは、先⽣がくれた。
+		Teacher gave this to me.
+	
+	3. ⾞を買ってくれるの？
+		You'll give me the favor of buying a car for me?
+	
+	4. 代わりに⾏ってくれる？
+		Will you give me the favor of going in my place?
 
+	Similarly, when used in the third-person, the speaker is speaking from the receiver's point of view and not the giver.
+	5. 先生がこれを学生にくれる
+		The teacher give this to student. (looking at it from the stuendt's point of view)
 
+	6. 友達が父にいいことを教えてくれた。
+		Friend gave favor of teaching something good to my dad. (looking at it from the dad's point of view)
 
+	7.  先⽣が教えてあげるんですか。
+		Teacher, will you be the one to give favor of teaching to... [anybody other than the speaker]?
 
+	8. 先⽣が教えてくれるんですか。
+		Teacher, will you be the one to give favor of teaching to... [anybody including the speaker]?
 
+	9. 私が全部⾷べてくれました。
+		「くれる」 is being used as giving done by the speaker. (Wrong)
 
+	私が全部⾷べてあげました。
+		I gave favor of eating it all. (Correct)
+	
+	10.友達がプレゼントを私にあげた。
+		「あげる」 is being used as giving to the speaker. (Wrong)
+		
+	友達がプレゼントを私にくれた。
+		Friend gave present to me. (Correct)
 
-
-
-
-
-
+	4.14.4 When to use 「もらう」
+		- "to receive" has only one version unlike 「あげる／くれる」
+		-  since you receive from someone, 「から」 is also appropriate in addition to the 「に」 target particle.
+	
+	page 174
+		
 
 
 
