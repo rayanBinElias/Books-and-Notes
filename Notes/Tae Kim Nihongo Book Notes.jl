@@ -1509,25 +1509,116 @@ much the way you'd expect.
 	
 	page 174
 		
+10th September 2024
+	Examples
+	1. 私が友達にプレゼントをもらった。
+		I received present from friend.
+	
+	2. 友達からプレゼントをもらった。
+		I received present from friend.
+	
+	3. これは友達に買ってもらった。
+		About this, received the favor of buying it from friend.
+	
+	4. 宿題をチェックしてもらいたかったけど、時間がなくて無理だった。
+		I wanted to receive the favor of checking homework but there was no time and it was impossible
 
+	Use「私からもらう」when you want to emphasive	that fact that the other person received it from you
+	5. その時計は私からもらったのよ。
+		(He) received that watch from me
 
+	4.14.5 Asking favors with 「くれる」 or 「もらえる」
+		- can I receive the favor of...
 
+	Examples
+	1. あなたが、私に千円を貸してくれる？
+		Will you give me the favor of lending 1000 yen?
+	
+	2. 私が、あなたに千円を貸してもらえる？
+		Can I receive the favor of you lending 1000 yen?
 
+	You can use the negative to make the request a little softer. 
+	3.ちょっと静かにしてくれない？
+		Won't you be a little quieter?
+		
+	4. 漢字で書いてもらえませんか。
+		Can you write this in kanji for me?
 
+	Asking someone to not do something
+		- you simply attach 「で」 to the negative form of the verb and proceed as before.
 
+	5. 全部⾷べないでくれますか。
+		Can you not eat it all?
 
+	6. ⾼い物を買わないでくれる？
+		Can you not buy expensive thing(s)?
 
+	4.15 Making requests (〜ください、〜ちょうだい、〜なさい、command form)
+	
+	4.15.1 Politely (and not so politely) making requests
+		- "please do X"
+		- 「くださる」 
+			- most common way to make requests
+		- 「なさる」
+			- firmer
 
+	4.15.2 「〜ください」－ a special conjugation of 「くださる」
+	「くださる」
+		- honorific form of kureru
+		
+	Examples	
+	1. それをください。
+		Please give me that.
+	
+	「くれる」 is used as a question asking for someone to give something.
+	2. それをくれる？
+		Can you give me that?
 
+	As you can see 「ください」 is a direct request for something while 
+	3. 漢字で書いてください。
+		Please write it in kanji.
+	
+	4. ゆっくり話してください。
+		Please speak slowly.
 
+	The rules for negative requests are same as the rules for 「くれる」 as well.
+	5. 落書きを書かないでください。
+		Please don't write graffiti.
+	
+	6. ここにこないでください。
+		Please don't come here.
 
+	In casual speech, it is often common to simply drop the 「ください」 part.
+	7. ⽇本語で話して。
+		Please speak in Japanese
 
+	8. 消しゴムを貸して。
+		Please lend me the eraser.
 
+	9. 遠い所に⾏かないで。
+		Please don't go to a far place.
 
+	For those who want to sound particularly commanding and manly, it is also possible to use 「くれる」	with the 「る」 removed.
+	10. ⽇本語で話してくれ。
+		Speak in Japanese.
+	
+	11. 消しゴムを貸してくれ。
+		Lend me the eraser.
+	
+	12. 遠い所に⾏かないでくれ。
+		Don't go to a far place.
 
-
-
-
+	Not possible with 「ください」.
+	13. お⽗さんがくれた時計が壊れた。
+		The clock that father gave broke.
+	
+	Can put practically anything in a direct quote
+	14. 「それをください」とお⽗さんが⾔った。
+		Father said, "Please give me that."
+	
+	4.15.3 Using 「〜ちょうだい」 as a casual request
+	
+	page 179
 
 
 
