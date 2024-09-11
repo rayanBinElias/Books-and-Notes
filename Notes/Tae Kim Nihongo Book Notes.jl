@@ -1615,10 +1615,200 @@ much the way you'd expect.
 	Can put practically anything in a direct quote
 	14. 「それをください」とお⽗さんが⾔った。
 		Father said, "Please give me that."
-	
-	4.15.3 Using 「〜ちょうだい」 as a casual request
-	
 	page 179
+
+11th September 2024
+	4.15.3 Using 「〜ちょうだい」 as a casual request
+		- casual alternative of 「ください」 i
+
+	Examples
+	1. スプーンをちょうだい。
+		Please give me the spoon.
+	
+	2. ここに名前を書いてちょうだい。
+		Please write your name here.
+
+	4.15.4 Using 「〜なさい」 to make firm but polite requests
+		- a special honorific conjugation of「する」
+		- a soft yet firm way of issuing a command.
+		- cannot be used by itself but must be attached to another verb.
+
+	Conjugate the verb to its stem and attach 「なさい」
+	Examples
+	1. ⾷べる → ⾷べなさい
+	
+	2. 飲む → 飲み → 飲みなさい
+	
+	3. する → し → しなさい
+
+	4. よく聞きなさい！
+		Listen well!
+	
+	5. ここに座りなさい。
+		Sit here.
+
+	You can also drop 「さい」 portion of the 「なさい」 to make a casual version of this grammar.
+	6. まだいっぱいあるから、たくさん⾷べな。
+		There's still a lot, so eat a lot.
+	
+	7. それでいいと思うなら、そうしなよ。
+		If you think that's fine, then go ahead and do it
+
+	4.15.5 The Command Form
+	Rules for creating command form
+	• For ru-verbs: Replace the 「る」 with 「ろ」
+	
+	• For u-verbs: Change the last character from an / u / vowel to an / e / vowel
+	
+	• Exceptions:
+		1. する → しろ
+		
+		2. くる → こい
+		
+		3. くれる → くれ
+
+
+	Examples
+	1. 好きにしろ。
+		Do as you please.
+	
+	2. あっち⾏け！
+		Go away!
+	
+	3. 早く酒を持ってきてくれ。
+		Hurry up and bring me some alcohol
+
+	4.15.6 Negative Command
+		- simply attach 「な」 to either ru verbs or u verbs. 
+			1. ⾏く → ⾏くな
+			2. する → するな
+
+	Examples
+	1. それを⾷べるな！
+		Don't eat that!
+	
+	2. 変なことを⾔うな！
+		Don't say such weird things!
+
+	4.16 Numbers and Counting
+		- the number system is in units of four instead of three
+
+	4.16.1 The Number System
+		100 
+			百
+			ひゃく
+		
+		1,000 
+			千
+			せん
+		
+		10,000 
+			万
+			まん
+		
+		100 * 10^6 (100 million)
+			億
+			おく
+
+		1 * 10^12 (Trillion)
+			兆
+			ちょう
+
+		Numerals 	漢字 ひらがな
+		300 			三百 さんびゃく
+		600 			六百 ろっぴゃく
+		800 			⼋百 はっぴゃく
+		3000 			三千 さんぜん
+		8000 			⼋千 はっせん
+		101̂2			 ⼀兆 いっちょう
+
+	Numbers smaller or less than 1
+	1. 零【れい】- zero
+	
+	2. ゼロ - zero
+	
+	3. マル - circle; zero
+	
+	4. 点【てん】- period; point
+	
+	5. マイナス - minus
+
+	Examples
+	1. 0.0021 
+		- ゼロ、点、ゼロ、ゼロ、⼆、⼀。
+
+	2.-29
+		- マイナス⼆⼗九 
+
+	4.16.2 Counting and Counters
+	Dates
+		0. 令和「れい・わ」
+			- Reiwa era
+			- 1 May 2019
+
+		1. 平成【へい・せい】
+			Heisei era
+			- 9th January 1989 to 30 April 2019
+		
+		2. 昭和【しょう・わ】
+			Showa era
+			- 1926 to 1989
+		
+		3. 和暦【わ・れき】
+			Japanese calendar
+		
+		4. ⼀⽇【いち・にち】
+			one day
+
+	Months
+		April (４⽉)
+			しがつ
+
+		July (７⽉)
+			しちがつ
+		
+		September (９⽉) 
+			くがつ
+
+	Days
+		ついたち
+			- first day of the month 
+
+		いちにち
+			- one day
+
+	Days of the month
+		Day Kanji Reading
+		What day 	何⽇ なん・にち
+		1st ⼀⽇ 	ついたち
+		2nd ⼆⽇ 	ふつ・か
+		3rd 三⽇ 	みっ・か
+		4th 四⽇ 	よっ・か
+		5th 五⽇ 	いつ・か
+		6th 六⽇ 	むい・か
+		7th 七⽇ 	なの・か
+		8th ⼋⽇ 	よう・か
+		9th 九⽇ 	ここの・か
+		10th ⼗⽇ とお・か
+	Format
+		XXXX 年 YY ⽉ ZZ⽇
+
+	Time
+		4 o'clock 
+			- よじ
+
+		7 o'clock 
+			- しちじ
+		
+		9 o'clock
+			- くじ
+
+	page 188
+
+
+
+
+
 
 
 
