@@ -1805,9 +1805,13 @@ much the way you'd expect.
 
 	page 188
 
+12th September 2024
+	Minutes
+		英語 	1 min 	3 min	 	4 min 	6 min 	8 min 	10 min
+		漢字 	⼀分 		三分 		四分 		 六分 	 ⼋分    ⼗分
+					いっぷん さんぷん よんぷん ろっぷん はっぷん じゅっぷん
 
-
-
+	page 189
 
 
 
