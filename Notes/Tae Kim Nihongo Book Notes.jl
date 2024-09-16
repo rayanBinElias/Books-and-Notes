@@ -1810,33 +1810,84 @@ much the way you'd expect.
 		英語 	1 min 	3 min	 	4 min 	6 min 	8 min 	10 min
 		漢字 	⼀分 		三分 		四分 		 六分 	 ⼋分    ⼗分
 					いっぷん さんぷん よんぷん ろっぷん はっぷん じゅっぷん
+	
+	Seconds
+		「秒」, which is read as 「びょう」. 
 
 	page 189
 
+16th September 2024
+	A Span of Time
+		「間」, which is read as 「かん」
+		⼆⼗⽇間 (はつかかん)
+			20 days
+		⼗五⽇間 (じゅうごにちかん)
+			15 days
+		
+		⼆年間 (にねんかん)
+			two years
+		
+		三週間 (さんしゅうかん)
+			three weeks
+		
+		⼀⽇ (いちにち)
+			1 day
 
+		8	weeks
+			はっしゅうかん
 
+	Counting months
+		1 month 		6 months 				10 months
+		⼀ヶ⽉ 			六ヶ⽉ 						⼗ヶ⽉
+		いっかげつ 	ろっかげつ 				じゅっかげつ
 
+	Other Counters
+		⽇本語 			When to Use
+		⼈ 					To count the number of people
+		本 					To count long, cylindrical objects such as bottles or chopsticks
+		枚 					To count thin objects such as paper or shirts
+		冊 					To count bound objects usually books
+		匹 					To count small animals like cats or dogs
+		歳 					To count the age of a living creatures such as people
+		個 					To count small (often round) objects
+		回					To count number of times
+		ヶ所 (箇所)  To count number of locations
+		つ 			  	To count any generic object that has a rare or no counter
 
+	4.16.3 Using 「⽬」 to show order
+		- You can attach 「⽬」 (read as 「め」) to various counters to indicate the order
+		- 「⼀番」
+			- which means "number one" becomes "the first"
+		-「⽬」 (⼀番⽬).
+			- the first
+		-「⼀回⽬」
+			- the first time
+		-「⼆回⽬」
+			- the second time, 
+		-「四⼈⽬」
+			- the fourth person
 
+	4.17 Casual Patterns and Slang
+		1) By making things shorter or,
+		2) By slurring the sounds together. 
+	
+	4.17.1 Basic Principles of Slang
+		- The fundamental goal of slang is to reduce mouth movement 
 
+	Examples:
+	1. ここはつまらないから私の家に⾏こう。
+		- ここつまんないから、私んち⾏こう。
+	
+	1. まったく、いつまでこんなところで、ぐずぐずするんだよ。
+		- ったく、いつまでこんなとこで、ぐずぐずすんだよ。
 
+	4.17.2 Sentence ordering and particles (or the lack thereof)
+	Examples
+	1. それは何？
+		What is that?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	2.何それ？
+		What? That. (Two sentences lumped into one)
 
 
 
