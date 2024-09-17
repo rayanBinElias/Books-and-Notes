@@ -1889,6 +1889,102 @@ much the way you'd expect.
 	2.何それ？
 		What? That. (Two sentences lumped into one)
 
+	3. ⾒た？あの⼈？
+		Did you see? That guy?
+	
+	4. もう⾷べた？昨⽇買ったアイス。
+		You ate it already? The ice cream I bought yesterday.
+	
 	page 194
+
+17th September 2024
+	4.17.3 Using 「じゃん」 instead of 「じゃない」 to confirm
+	Example:
+	1. まあ、いいじゃない。
+		Well, it's probably fine (don't you think?)
+
+	Summary
+	• Though derived from 「じゃない」, 「じゃん」 is always used to confirm the positive.
+
+	• It can be attached to the end of any sentence regardless of whether it ends in a noun, adjective,　verb, or adverb.
+
+	3. ほら、やっぱりレポートを書かないとだめじゃん。
+		See, as I thought, you have to write the report.
+
+	4. 誰もいないからここで着替えてもいいじゃん。
+		Since there's nobody, it's probably fine to change here
+
+	4.17.4 Using 「つ」 for 「という」
+	Examples
+	1. つうか、なんでお前がここにいんのよ！
+		Or rather, why are you here?!
+	
+	2. 宿題で時間がないつってんのに、みきちゃんとデートしにいったらしい。
+		Although he's saying he doesn't have time due to homework, I hear he went on a date with Mikichan.
+
+	3. 明⽇は試験だぞ。つっても、勉強はしてないだろうな。
+		Yo, tomorrow's the test. Even if I say that, you probably didn't study anyway, huh?
+	
+	4. だから、違うんだつうの！
+		Like I said, you're wrong!
+
+	5.だから、違うんだっつうの！
+		Like I said, you're wrong!
+		- usually means you are really at the brink of your patience
+
+	
+	4.17.5 Using 「ってば」 and 「ったら」to show exasperation
+		- 「ってば」and「ったら」is yet another type of abbreviation for「という」similar to「って」as discussed in the defining and describing section
+
+	Examples
+	1. もう⾏くってば！
+		I told you I'm going already!
+	
+	2. あなたったら、いつも忘れるんだから。
+		You're always forgetting.
+
+	
+	4.17.6 Using 「なんか」 just about everywhere
+	Example
+	1. なにか⾷べる？
+		Eat something?
+
+	2. 今⽇は、なんか忙しいみたいよ。
+		I guess he's like busy today.
+
+	page 200
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
