@@ -1952,15 +1952,42 @@ much the way you'd expect.
 	2. 今⽇は、なんか忙しいみたいよ。
 		I guess he's like busy today.
 
+	3. なんかね。お⾵呂って超気持ちいいよね！
+		Like, baths feel really good, huh?
+	
+	4. お⺟さんが、なんか明⽇まで戻らないんだってよ。
+		Mom said she's not coming back until like tomorrow.
+	
+	5. なんかさ。ボブは、私のことなんか本当に好きかな？
+		Hey like, do you really think that Bob likes somebody like me?
+	
 	page 200
 
+18th September 2024
+	4.17.7 Showing contempt for an action with 「〜やがる」
+		- is a verb suffix used to indicate hatred or contempt for the person doing the action. Unlike the rest of the slang covered here, this extremely strong language is not used in normal, everyday conversations
+
+	Examples
+	1. あんなやつに負けやがって。じゃ、どうすんだよ？
+		Losing to a guy like that. Well, what are you going to do?
 	
+	2. やる気か？だったらさっさと来やがれ！
+		You want to fight? If so, then hurry up and come on!
 
+	4.18 More sentence-ending particles
 
+	4.18.1 「な」 and 「さ」 sentence-ending particles
+		「さ」
+			- which is basically a very casual form of 「よ」
+			- like
 
+			「な」 
+				- in place of 「ね」 when it sounds too soft and reserved 
+					- for what you want to say
+					- for the audience you are speaking to.
 
-
-
+	Page 203
+	
 
 
 
