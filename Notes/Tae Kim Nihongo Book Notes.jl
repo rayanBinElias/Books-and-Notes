@@ -1981,13 +1981,15 @@ much the way you'd expect.
 			- which is basically a very casual form of 「よ」
 			- like
 
-			「な」 
-				- in place of 「ね」 when it sounds too soft and reserved 
-					- for what you want to say
-					- for the audience you are speaking to.
+		「な」 
+			- in place of 「ね」 when it sounds too soft and reserved 
+				- for what you want to say
+				- for the audience you are speaking to.
 
 	Page 203
 	
+19th September 2024
+
 
 
 
