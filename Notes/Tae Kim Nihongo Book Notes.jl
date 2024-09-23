@@ -1988,19 +1988,68 @@ much the way you'd expect.
 
 	Page 203
 	
-19th September 2024
+23rd September 2024
+		Example 1
+		洋介：今、図書館に⾏くんだよな。
+			Yousuke: You are going to the library now huh? (seeking explanation)
+		
+		智⼦：うん、なんで？
+			Tomoko: Yeah, why?
 
+		Example 2
+		ボブ：⽇本語は、たくさん勉強したけどな。まだ全然わからない。
+			Bob: I studied Japanese a lot, right? But, I still don't get it at all.
+		
+		アリス：⼤丈夫よ。きっとわかるようになるからさ。
+			Alice: No problem. You'll become able to understand for sure, you know?
+		
+		ボブ：ならいいけどな。
+			Bob: If so, it would be good.
+		
+	「な」 
+		- sentence-ending particle is often used with the question marker 「か」 to indicate that the speaker is considering something
 
+	1. 今⽇は⾬が降るかな？	
+		I wonder if it'll rain today.
 
+	2. いい⼤学に⾏けるかな？
+		I wonder if I can go to a good college.
 
+	4.18.2 「かい」 and 「だい」 sentence-ending particles
+		- are strongly masculine sentence endings for asking questions.
+		
+		「かい」 
+			is used for yes/no questions while 
+			
+		「だい」 
+			is used for open-ended questions.
 
+	Examples
+	1. おい、どこに⾏くんだい？
+		Hey, where are (you) going?
+	
+	2. さきちゃんって呼んでもいいかい？
+		Can (I) call you Saki-chan?
+	
+	3. ⼀体何時に帰ってくるつもりだったんだい？
+		What time were (you) planning on coming home exactly?
+	
+	4. 俺は⼟曜⽇、映画を⾒に⾏くけど、⼀緒に⾏くかい？
+		I'm going to see a movie Saturday, go together?
 
+	4.18.3 Gender-specific sentence-ending particles
+	Using 「わ」 is just like 「よ」 
+		- except it will make you sound very feminine 
+		- this is a different sound from the 「わ」 used in Kansai dialect
 
+	「かしら」 
+		- is also a very feminine version of 「かな」、which we just went over.
 
+	「ぞ」 and 「ぜ」 
+		- are identical to 「よ」 except that it makes you sound "cool" and manly
+		- at least, that is the intent. 
 
-
-
-
+page 205
 
 
 
