@@ -2051,8 +2051,49 @@ much the way you'd expect.
 
 page 205
 
+24th September 2024
+	Example
+	1. もう時間がないわ。
+		There is no more time.
+	
+	2. おい、⾏くぞ！
+		Hey, we're going!
+	
+	3. これで、もう終わりだぜ。
+		With this, it's over already.
+	
+	4. いい⼤学に⼊れるかしら？
+		I wonder if I can enter a good college.
 
+	4.18.4 That's a wrap!
+	Example 1
+		アリス：加賀先⽣、ちょっと質問を聞いてもいいですか？
+		加賀先⽣：はい、いいですよ。
+		アリス：「Hello」を⽇本語で何と⾔えばいいですか。
+		何と⾔えば = quoted sub-clause + if conditional of ⾔う
+		加賀先⽣：そうね。⼤体、「こんにちは」と⾔うと思いますよ。ただし、書く時は「こんにちわ」じゃ
+		なくて、「こんにちは」と書かなくてはなりません。
+		「と⾔うと思います」 = quoted sub-clause + quoted sub-clause
+		「じゃなくて」 = negative sequence of states
+		アリス：そうですか。他に何かいい表現はありますか。
+		加賀先⽣：これも覚えといてね。朝は、「おはよう」と⾔うの。でも、上の⼈には「おはようございま
+		す」と⾔ってください。
+		「覚えといて」 - 覚える +
+		abbreviated form of 〜ておく + casual 〜てください with ください dropped.
+		アリス：はい、分かりました。間違えないようにします。いい勉強になりました！
+	
+	Literal translation of Example 1
+		Alice: Kaga-sensei, is it ok to ask you a question?
+		Kaga-sensei: Yes, it's ok.
+		Alice: If you say what for "hello" in Japanese, is it ok?
+		Kaga-sensei: Well, mostly, I think people say "konnichiwa". Only, when you write it, you must write
+		"konnichiha" and not "konnichiwa".
+		Alice: Is that so? Are there any other good expressions?
+		Kaga-sensei: Please memorize this too (in preparation for the future). In the morning, everybody says,
+		"ohayou". But, please say, "ohayou-gozaimasu" to a higher person.
+		Alice: Yes, I understood. I'll do in the manner of not making mistake. It became good study!
 
+page 208
 
 
 
